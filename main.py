@@ -4,7 +4,12 @@ def q1():
     verifique se ele é par ou ímpar. Imprima uma mensagem informando o 
     resultado.
     """
-    pass
+    
+    num = int(input("digite um número: "))
+    if num % 2 == 0:
+        print("Par")
+    else:
+        print("Impar")
 
 
 def q2():
@@ -14,13 +19,22 @@ def q2():
     Para 'texto', imprima 'to'
 
     """
-    pass
+    import math
+
+    texto = input("Digite alguma frase: ")
+    tamanho = len(texto)
+    meio = math.ceil(tamanho / 2)
+    print(texto[meio:tamanho])
 
 def q3():
     """
     Leia um número da entrada e imprima todos os 10 primeiros múltiplos dele na mesma linha
     """
-    pass
+    
+    num = int(input("digite um número: "))
+    for i in range(1, 11): 
+        resultado = num * i
+        print(resultado, end=" ")
 
 
 def q4():
@@ -44,13 +58,31 @@ def q5():
         322: isosceles
         234: escaleno
     """
-    pass
+    
+    lado1 = int(input("digite um lado 1: "))
+    lado2 = int(input("digite um lado 2: "))
+    lado3 = int(input("digite um lado 3: "))
+
+    if lado1 == lado2 == lado3:
+        print("equilátero")
+    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        print("isoceles")
+    else: 
+        print("escaleno")       
 
 def q6():
-    pass
+    
+    ano = int(input("digite o ano da primeira dose: "))
+    intervalo = int(input("Digite o intervalo em anos: "))
+
+    for i in range(1, 4):
+        print(ano+i*intervalo)
+
 
 def q7():
-    pass
+    
+    while True:
+        num =
 
 def q8():
     pass
